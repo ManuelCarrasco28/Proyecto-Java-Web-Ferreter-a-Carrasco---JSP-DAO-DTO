@@ -30,10 +30,10 @@ aplicando arquitectura MVC y los patrones DAO y DTO.
 4. Ejecutar en Apache Tomcat
 
 ## 👤 Autores
-Carrasco Millán José Manuel
-Delgado Bustamante Henry Jhulino
-Manchay Reyes, Jerson Elias
-Segundo Arteaga Karen Milenka
-Vásquez Bustamante Gian Anthony
+- Carrasco Millán José Manuel
+- Delgado Bustamante Henry Jhulino
+- Manchay Reyes, Jerson Elias
+- Segundo Arteaga Karen Milenka
+- Vásquez Bustamante Gian Anthony
 
 ARCHIVOS NECESARIOS: https://drive.google.com/drive/folders/1fcs-C-9f_OsVLbAc7yl_JAa1DJDv3wHj?usp=sharing 
