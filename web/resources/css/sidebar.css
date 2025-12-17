@@ -1,0 +1,177 @@
+/* ======== SIDEBAR CSS — SOLO SIDEBAR ======== */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+/* CONTENEDOR DEL SIDEBAR */
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background: #0047b3;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+}
+
+/* TÍTULO */
+.sidebar .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.brand-logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));
+
+    /* evita que la imagen “reserve” espacio extra del lienzo */
+    max-width: 42px;
+    max-height: 42px;
+}
+
+
+.brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    /* ✨ ESTO ES LO QUE ARREGLA EL BUG */
+    overflow: hidden;
+}
+
+
+.user-info {
+    margin: 0 18px 18px;
+    padding: 12px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.18), rgba(255,255,255,0.08));
+    border-radius: 12px;
+    font-size: 13px;
+    line-height: 1.4;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18), inset 0 0 0 1px rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.18);
+}
+.user-info .user-label {
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-size: 11px;
+    color: #dce7ff;
+    margin-bottom: 4px;
+}
+.user-info .user-name {
+    font-weight: 800;
+    color: #fff;
+    font-size: 14px;
+}
+.user-info .user-role {
+    color: #dce7ff;
+    font-size: 12px;
+}
+.user-info .user-username {
+    color: #d6e4ff;
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+/* LISTA */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin: 4px 0;
+}
+
+/* ENLACES */
+.sidebar li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 18px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 6px;
+    transition: background 0.2s ease-in-out, padding-left 0.2s;
+}
+
+/* EFECTO HOVER */
+.sidebar li a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    padding-left: 24px;
+}
+
+/* ICONOS */
+.sidebar .icon {
+    width: 24px;
+}
+
+/* CERRAR SESIÓN */
+.sidebar .logout a {
+    background: rgba(255, 0, 0, 0.30);
+}
+
+.sidebar .logout a:hover {
+    background: rgba(255, 0, 0, 0.45);
+    padding-left: 24px;
+}
+
+/* Ajustar contenido principal */
+.main {
+    margin-left: 240px;
+}
+.main-content {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    padding: 24px;
+    margin: 20px;
+    margin-left: 280px;
+    box-sizing: border-box;
+}
+
+/* Ocultar submenú por defecto */
+.submenu-items {
+    display: none;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.submenu-items a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.submenu-items a:hover {
+    color: #d0e8ff;
+}
+
+/* Rotate arrow when open */
+.arrow svg {
+    transition: transform 0.2s;
+}
+
+.arrow.rotate svg {
+    transform: rotate(90deg);
+}
